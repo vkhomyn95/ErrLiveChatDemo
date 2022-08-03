@@ -9,8 +9,20 @@
 	<button type="button" class="btn btn-primary" onclick="myFunction()">Очистити локалсторедж</button>
 	<script type="text/javascript">
 		function myFunction() {
-			localStorage.clear();
-			location.reload();
+			VPChatAuthClient({
+			    "isExternal": true,
+			    "client": {
+				"id": 57,
+				"firstName": "Volodymyr",
+				"email": "vvvvv@gmail.com"
+			    },
+			    "external": [
+				{
+				    "key": "language",
+				    "value": "uk"
+				}
+			    ]
+			})
 		}
 	</script>
 
